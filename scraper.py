@@ -13,7 +13,18 @@ if respons.status_code == requests.codes.ok:
         opinions_all = []
         for opinion in opinions:
             single_opinion = {
-                ""
+                "opinion_id":,
+                "author":,
+                "recommendation":,
+                "stars":,
+                "purchased":,
+                "opinion_date":,
+                "purchase_date":,
+                "usefull_count":,
+                "unusefull_count":,
+                "content":,
+                "pros":,
+                "cons":
             }
 else:
     print("Nie ma opinii")
